@@ -233,6 +233,19 @@ else()
   itk_module_impl()
 endif()
 
+message("*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*")
+message(ITK_SOURCE_DIR ${ITK_SOURCE_DIR})
+message(RTK_BINARY_DIR ${RTK_BINARY_DIR})
+message(CMAKE_INSTALL_LIBDIR ${CMAKE_INSTALL_LIBDIR})
+message(RTK_INSTALL_RUNTIME_DIR ${RTK_INSTALL_RUNTIME_DIR})
+message(RTK_INSTALL_LIB_DIR ${RTK_INSTALL_LIB_DIR})
+message(RTK_INSTALL_ARCHIVE_DIR ${RTK_INSTALL_ARCHIVE_DIR})
+message(RTK_INSTALL_INCLUDE_DIR ${RTK_INSTALL_INCLUDE_DIR})
+message(RTK_INSTALL_PACKAGE_DIR ${RTK_INSTALL_PACKAGE_DIR})
+message(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
+message(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_LIBRARY_OUTPUT_DIRECTORY})
+message(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_ARCHIVE_OUTPUT_DIRECTORY})
+
 # Propagate cmake options in a header file
 # Must be done after the external module configuration to make sure CudaCommon_VERSION is defined
 configure_file(${RTK_SOURCE_DIR}/rtkConfiguration.h.in
