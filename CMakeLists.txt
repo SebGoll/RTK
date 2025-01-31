@@ -38,7 +38,7 @@ set(RTK_LIBRARIES RTK)
 # Installation variables
 #=========================================================
 if(NOT CMAKE_INSTALL_LIBDIR)
-  set(CMAKE_INSTALL_LIBDIR lib)
+  # set(CMAKE_INSTALL_LIBDIR lib)
 endif()
 if(NOT RTK_INSTALL_RUNTIME_DIR)
   set(RTK_INSTALL_RUNTIME_DIR bin)
